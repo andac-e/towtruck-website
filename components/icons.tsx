@@ -1,4 +1,5 @@
 import {
+  Facebook,
   Instagram,
   LucideProps,
   Moon,
@@ -18,6 +19,7 @@ export const Icons = {
   instagram: Instagram,
   phone: Phone,
   location: Navigation,
+  facebook: Facebook,
   whatsapp: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -3,7 +3,10 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import cekiciImg from "@/public/cekici.webp"
+import firstCekici from "@/public/cekici-1.jpeg"
+import secondCekici from "@/public/cekici-2.jpeg"
+import thirdCekici from "@/public/cekici-3.jpeg"
+import fourthCekici from "@/public/cekici-4.jpeg"
 import TextTransition, { presets } from "react-text-transition"
 
 import { siteConfig } from "@/config/site"
@@ -32,8 +35,6 @@ export default function IndexPage() {
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10 text-center">
       <div className="flex max-w-[980px] flex-col items-center gap-2">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-5xl">
-          {/* Beautifully designed components <br className="hidden sm:inline" />
-          built with Radix UI and Tailwind CSS. */}
           Profesyonel oto çekici hizmeti ile 7/24 yanınızdayız.
           <TextTransition
             className="justify-center text-rose-600 md:my-2"
@@ -78,15 +79,48 @@ export default function IndexPage() {
           Konum
         </Link> */}
       </div>
-      <div className="flex justify-center">
-        <Image
-          src={cekiciImg}
-          width={500}
-          height={500}
-          className="rounded-md drop-shadow mt-3"
-          alt="Çekici fotoğrafı"
-          priority={true}
-        />
+      <div className="columns-2 sm:columns-2 gap-4">
+        <div className="relative h-40 mb-4">
+          <Image
+            src={firstCekici}
+            className="rounded-lg object-cover"
+            alt="Çekici fotoğrafı"
+            sizes="(max-width: 768px) 213px, 50vw"
+            priority
+            fill
+          />
+        </div>
+        <div className="relative h-80">
+          <Image
+            src={thirdCekici}
+            className="rounded-lg object-cover"
+            alt="Çekici fotoğrafı"
+            sizes="(max-width: 768px) 213px, 50vw"
+            priority
+            fill
+          />
+        </div>
+        <div className="relative h-40 mb-4">
+          <Image
+            src={secondCekici}
+            className="rounded-lg object-cover"
+            alt="Çekici fotoğrafı"
+            sizes="(max-width: 768px) 213px, 50vw"
+            priority
+            fill
+          />
+        </div>
+
+        <div className="relative h-80">
+          <Image
+            src={fourthCekici}
+            className="rounded-lg object-cover"
+            alt="Çekici fotoğrafı"
+            sizes="(max-width: 768px) 213px, 50vw"
+            priority
+            fill
+          />
+        </div>
       </div>
 
       <Card>
@@ -95,10 +129,19 @@ export default function IndexPage() {
         </CardHeader>
         <CardContent>
           <p>
-            İsim: <span className="font-semibold">İsim Soyisim</span>
+            İsim: <span className="font-semibold">Azat Şeker</span>
           </p>
           <p>
-            Telefon: <span className="font-semibold">0 555 55 55</span>
+            Telefon:{" "}
+            <a href={siteConfig.links.phone} className="font-semibold">
+              0541 879 14 72
+            </a>
+          </p>
+          <p>
+            Email:{" "}
+            <a href={siteConfig.links.mail} className="font-semibold">
+              sekerazat7241@gmail.com
+            </a>
           </p>
           <p>
             Adres: <span className="font-semibold">Adres</span>

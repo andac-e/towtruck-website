@@ -29,6 +29,21 @@ export function SiteHeader() {
               </div>
             </Link>
             <Link
+              href={siteConfig.links.facebook}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={buttonVariants({
+                  size: "icon",
+                  variant: "ghost",
+                })}
+              >
+                <Icons.facebook className="h-5 w-5" />
+                <span className="sr-only">Facebook</span>
+              </div>
+            </Link>
+            {/* <Link
               href={siteConfig.links.location}
               target="_blank"
               rel="noreferrer"
@@ -42,7 +57,7 @@ export function SiteHeader() {
                 <Icons.location className="h-5 w-5" />
                 <span className="sr-only">Konum</span>
               </div>
-            </Link>
+            </Link> */}
             <ThemeToggle />
           </nav>
         </div>
