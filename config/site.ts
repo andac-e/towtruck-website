@@ -6,7 +6,7 @@ export const siteConfig = {
   mainNav: [],
   links: {
     instagram: "asdasd",
-    whatsapp: "https://api.whatsapp.com/send?phone=+905376052119&text=Merhaba.",
+    whatsapp: "https://api.whatsapp.com/send?phone=+905418791472&text=Merhaba.",
     phone: "tel:05418791472",
     location: "asdasdsad",
     facebook: "asd",
