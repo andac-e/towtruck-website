@@ -85,6 +85,7 @@ export default function IndexPage() {
           height={500}
           className="rounded-md drop-shadow mt-3"
           alt="Çekici fotoğrafı"
+          priority={true}
         />
       </div>
 
