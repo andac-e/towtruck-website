@@ -144,7 +144,7 @@ export default function IndexPage() {
             </a>
           </p>
           <p>
-            Adres: <span className="font-semibold">Adres</span>
+            Adres: <span className="font-semibold">Kocaeli / İzmit</span>
           </p>
         </CardContent>
       </Card>
